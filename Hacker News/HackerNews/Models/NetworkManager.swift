@@ -36,6 +36,7 @@ class NetworkManager: ObservableObject {
                     }
                 }
             }
+            // Need to call resume() to initiate the actual network request
             task.resume()
         }
     }

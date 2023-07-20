@@ -14,7 +14,7 @@ struct WebView: UIViewRepresentable {
     
     let urlString: String?
         
-    // Makes UIKit WebView and turns it to SwiftUI WebView
+    // Makes WebKit WebView and turns it to SwiftUI WebView
     func makeUIView(context: Context) -> WKWebView {
         return WKWebView()
     }

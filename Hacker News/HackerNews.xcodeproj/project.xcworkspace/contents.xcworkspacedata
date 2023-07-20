@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/matt_wong/Desktop/swiftui-projects/Hacker News/HackerNews.xcodeproj">
    </FileRef>
 </Workspace>
