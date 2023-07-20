@@ -18,3 +18,8 @@ Hacker News uses the HN Algolia API (`hn.algolia.com/api`) to fetch a list of fr
 `NetworkManager`: conforms to `ObservableObject` since UI properties in `ContentView` are dependent on `posts` from this class. `fetchData()` function creates URL() and URLSession() instances, and makes async network request with dataTask() to fetch the API data. JSON data is then decoded and `posts` is updated with retrieved data.
 
 `PostData`: a `Results` struct that imitates the JSON data from the API. Conforms to `Decodable` since we want to go from JSON --> struct. `Results` holds a single property `hits`, an array of `Post` objects that defines the properties of an article (eg. points, title, etc.).
+
+# 2. MiiCard
+Simple digital business card app that displays 3 contact info buttons. Created a `ButtonLinkView` struct for the contact info buttons to improve code reusability. 
+
+<img width="400" alt="MiiCard screenshot" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/8adc9228-c37a-4f38-93f4-d03f44e8161e">
