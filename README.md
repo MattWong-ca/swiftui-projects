@@ -31,6 +31,11 @@ A Pokemon Pokedex that fetches data from a CSV file to display a list of 720+ Po
 
 `CSVManager`: the function `loadCSVData()` returns an array of Pokemon objects (eg. `[["Bulbasaur", "1"], ["Charmander", "2"], ["Squirtle", "3"]]`). It takes the file path of the CSV file, turns its content into one giant string, cleans up the rows, separates data into an array of rows (strings), separates each row so each of its properties are a string, then creates a Pokemon and adds it to the array that'll be returned.
 
+### Notes
+- I originally used `Data(contentsOf: )` but that was synchronous URL loading of the images, which can crash the app / lead to UI unresponsiveness
+- Where I learned to add the images: [Stack Overflow](https://stackoverflow.com/questions/69239521/unable-to-display-pokemon-image-from-pokeapi-co)
+- Tutorial I followed: [Oliver Baumeister](https://www.youtube.com/watch?v=uNst4KS_6DY)
+
 # 2. Hacker News
 Hacker News uses the HN Algolia API (`hn.algolia.com/api`) to fetch a list of front-page articles on Hacker News. The results are returned in a list ordered by the number of points they received.
 
