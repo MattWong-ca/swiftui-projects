@@ -4,13 +4,16 @@ This repo contains a collection of SwiftUI projects I've made!
 # 1. Pokédex
 A Pokemon Pokedex that fetches data from a CSV file to display a list of 720+ Pokemons. Each Pokemon has its own profile that shows their types, stats, and an image.
 
-<img width="200" alt="Pokedex ContentView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/674a6db9-6b69-41b0-85de-b530cfeedd3e">
-<img width="200" alt="Charizard" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/60737fca-b293-47ce-b6eb-10208cfe5e96">
-<img width="200" alt="Blastoise" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/a10fdf3e-4b4f-4d04-9d8d-41e43e67365c">
-<img width="200" alt="Volcanion" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/87a0a27d-fe5c-4069-9152-4c48ce9c8db9">
+<img width="200" alt="Pokedex ContentView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/f878799d-ee7c-4de6-a056-e0522ddb5ee7">
+<img width="200" alt="Venusaur" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/818f1135-16f3-4bf3-acdf-a8aa72a1f289">
+<img width="200" alt="Charizard" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/9d4caf82-e4ce-48c5-8920-45b53b51ddc7">
+<img width="200" alt="Blastoise" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/ee25d84a-230a-4883-8d04-9705683fdc66">
+<img width="200" alt="Empty search bar" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/92c50dc8-83bb-4f79-b3b1-7afbafcb4e67">
+<img width="200" alt="Using search bar" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/519f95e9-86ff-4a7e-812e-92e6a039edd7">
+<img width="200" alt="Volcanion" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/2d77892d-fb47-4535-be7b-fdc501ff52df">
 
 ### Views
-`ContentView`: a `List` is used inside a `NavigationView`, where each `NavigationLink` links to a `PokemonDetailView` of the titled Pokemon. The colored type tags are reusable `PokemonTypeView`s that are also used in `PokemonDetailView`. The `pokedex` array of Pokemon passed in is from the `loadCSVData()` function in `CSVManager` (called in `PokedexApp`).
+`ContentView`: a `List` is used inside a `NavigationView`, where each `NavigationLink` links to a `PokemonDetailView` of the titled Pokemon. The colored type tags are reusable `PokemonTypeView`s that are also used in `PokemonDetailView`. The `pokedex` array of Pokemon passed in is from the `loadCSVData()` function in `CSVManager` (called in `PokedexApp`). Added a search bar: used a @State searchText property to pass in `.searchable()`, keeping track of what the user inputs. If a Pokemon's name contains the characters they input, it gets added to a new `filteredPokemon` computed array of Pokemon objects that return the list of Pokemon shown when searched.
 
 `PokemonTypeView`: small colored tags that show the Pokemon's type. The Pokemon's type as a string is passed in --> this is used for 1) the  text and 2) the different colored backgrounds, which match the appropriately-named colors in Assets (eg. `.background(Color(pokemonType))`).
 
