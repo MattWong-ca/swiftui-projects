@@ -22,19 +22,17 @@ class Card: Identifiable, ObservableObject {
     }
 }
 
-let cardValues: [String] = [
-    "a", "b", "c", "d", "e", "f"
-]
-
 func createCardList() -> [Card] {
+    let cardValues: [String] = [
+        "🏀", "⚽", "⚾", "🥎", "🏐", "🏈", "🎾", "🏸", "🏓", "🏒", "🥊", "🥋"
+    ]
+    
     var cardList = [Card]()
     
+    // Each emoji is instantiated as a Card and added 2x in cardList
     for cardValue in cardValues {
-        cardList.append(Card(text: cardValue))
-        cardList.append(Card(text: cardValue))
+        cardList += [Card(text: cardValue), Card(text: cardValue)]
     }
     
     return cardList
 }
-
-let faceDownCard = Card(text: "?")
