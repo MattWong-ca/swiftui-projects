@@ -55,10 +55,6 @@ struct ContentView: View {
                             .cornerRadius(10)
                     }
                 }
-                
-                
-                    
-                
             }
         }
     }
