@@ -56,7 +56,7 @@ struct ContentView: View {
                     }
                 }
             }
-        }
+        }        
     }
     
     func startTimer() {
