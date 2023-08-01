@@ -13,8 +13,6 @@
 		F91DB90A2A786B31009ED599 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91DB9092A786B31009ED599 /* Preview Assets.xcassets */; };
 		F91DB9112A7872C2009ED599 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91DB9102A7872C2009ED599 /* WeatherData.swift */; };
 		F91DB9132A7877B8009ED599 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91DB9122A7877B8009ED599 /* WeatherManager.swift */; };
-		F91DB9152A787C1A009ED599 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = F91DB9142A787C1A009ED599 /* .env */; };
-		F91DB9172A787C5E009ED599 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F91DB9162A787C5E009ED599 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +23,6 @@
 		F91DB9092A786B31009ED599 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F91DB9102A7872C2009ED599 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		F91DB9122A7877B8009ED599 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
-		F91DB9142A787C1A009ED599 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
-		F91DB9162A787C5E009ED599 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +61,6 @@
 				F91DB9082A786B31009ED599 /* Preview Content */,
 				F91DB9102A7872C2009ED599 /* WeatherData.swift */,
 				F91DB9122A7877B8009ED599 /* WeatherManager.swift */,
-				F91DB9142A787C1A009ED599 /* .env */,
-				F91DB9162A787C5E009ED599 /* .gitignore */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -137,8 +131,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F91DB9172A787C5E009ED599 /* .gitignore in Resources */,
-				F91DB9152A787C1A009ED599 /* .env in Resources */,
 				F91DB90A2A786B31009ED599 /* Preview Assets.xcassets in Resources */,
 				F91DB9072A786B31009ED599 /* Assets.xcassets in Resources */,
 			);
