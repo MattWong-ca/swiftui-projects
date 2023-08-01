@@ -10,18 +10,17 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var weatherManager = WeatherManager()
     
-    
-    
     var body: some View {
         let data = weatherManager.weatherData
         let data2 = data.main?.temp
         let goodData = String(data2 ?? 0.5)
+                
         VStack {
             Text("Today's Weather")
                 .font(.title)
-            Text("City: ")
+            Text("City: Toronto")
             HStack {
-                Image(systemName: "phone.fill")
+                Image(systemName: "sun.max.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 45)
@@ -31,7 +30,8 @@ struct ContentView: View {
             }
         }
         .onAppear() {
-            weatherManager.fetchData()
+            self.weatherManager.fetchCity(city: "Tokyo")
+            self.weatherManager.fetchData()
         }
     }
 }
