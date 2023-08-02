@@ -9,18 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var weatherManager = WeatherManager()
+    let city: String = "st%20louis"
+    @State var iconName: String = ""
     
     var body: some View {
         let data = weatherManager.weatherData
         let data2 = data.main?.temp
         let goodData = String(data2 ?? 0.5)
-                
+
+        
+        
         VStack {
             Text("Today's Weather")
                 .font(.title)
-            Text("City: Toronto")
+            Text("City: \(city)")
             HStack {
-                Image(systemName: "sun.max.fill")
+                Image(systemName: iconName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 45)
@@ -30,9 +34,21 @@ struct ContentView: View {
             }
         }
         .onAppear() {
-            self.weatherManager.fetchCity(city: "Tokyo")
+            self.weatherManager.fetchCity(city: city)
             self.weatherManager.fetchData()
+            
+//            let icon = data.weather?[0].id
+//            let goodIcon = icon ?? 800
+//            iconName = self.weatherManager.getConditionName(weatherId: goodIcon)
+//            print(goodIcon)
+
         }
+        .onChange(of: weatherManager.weatherData) { newData in
+                    let icon = newData.weather?.first?.id
+                    let goodIcon = icon ?? 800
+                    iconName = self.weatherManager.getConditionName(weatherId: goodIcon)
+                    print(goodIcon)
+                }
     }
 }
 
