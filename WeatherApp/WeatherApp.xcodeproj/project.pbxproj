@@ -15,6 +15,8 @@
 		F91DB9132A7877B8009ED599 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91DB9122A7877B8009ED599 /* WeatherManager.swift */; };
 		F91DB9192A7B410B009ED599 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91DB9182A7B410B009ED599 /* TestView.swift */; };
 		F91DB91B2A7C1DCB009ED599 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91DB91A2A7C1DCB009ED599 /* LocationManager.swift */; };
+		F91DB91D2A7C3A10009ED599 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91DB91C2A7C3A10009ED599 /* WelcomeView.swift */; };
+		F91DB91F2A7C5C97009ED599 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91DB91E2A7C5C97009ED599 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		F91DB9122A7877B8009ED599 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		F91DB9182A7B410B009ED599 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		F91DB91A2A7C1DCB009ED599 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F91DB91C2A7C3A10009ED599 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F91DB91E2A7C5C97009ED599 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				F91DB9122A7877B8009ED599 /* WeatherManager.swift */,
 				F91DB9182A7B410B009ED599 /* TestView.swift */,
 				F91DB91A2A7C1DCB009ED599 /* LocationManager.swift */,
+				F91DB91C2A7C3A10009ED599 /* WelcomeView.swift */,
+				F91DB91E2A7C5C97009ED599 /* LoadingView.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -154,7 +160,9 @@
 				F91DB91B2A7C1DCB009ED599 /* LocationManager.swift in Sources */,
 				F91DB9112A7872C2009ED599 /* WeatherData.swift in Sources */,
 				F91DB9132A7877B8009ED599 /* WeatherManager.swift in Sources */,
+				F91DB91F2A7C5C97009ED599 /* LoadingView.swift in Sources */,
 				F91DB9032A786B30009ED599 /* WeatherAppApp.swift in Sources */,
+				F91DB91D2A7C3A10009ED599 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

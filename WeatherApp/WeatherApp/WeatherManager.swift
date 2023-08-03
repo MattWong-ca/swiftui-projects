@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 class WeatherManager: ObservableObject {
     @Published var weatherData: WeatherData?
@@ -16,7 +17,7 @@ class WeatherManager: ObservableObject {
 //        url = "\(url)&appid=\(apiKey)&q=\(city)"
 //    }
     
-    func fetchCity(lat: Double, lon: Double) {
+    func fetchLiveWeather(lat: CLLocationDegrees, lon: CLLocationDegrees) {
         url = "\(url)&appid=\(apiKey)&lat=\(lat)&lon=\(lon)"
     }
     

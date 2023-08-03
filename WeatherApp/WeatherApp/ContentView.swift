@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+/*
 struct ContentView: View {
     @ObservedObject var weatherManager = WeatherManager()
     let city: String = "toronto"
@@ -48,3 +48,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+*/
