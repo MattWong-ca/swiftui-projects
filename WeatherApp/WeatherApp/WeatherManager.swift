@@ -8,17 +8,16 @@
 import Foundation
 
 class WeatherManager: ObservableObject {
-    @Published var weatherData = WeatherData(name: nil, weather: nil, main: nil)
+    @Published var weatherData: WeatherData?
     let apiKey = ""
-    var url: String = ""
+    var url = "https://api.openweathermap.org/data/2.5/weather?units=metric"
     
-//    init(weatherData: WeatherData) {
-//        self.weatherData = weatherData
+//    func fetchCity(city: String) {
+//        url = "\(url)&appid=\(apiKey)&q=\(city)"
 //    }
     
-    
-    func fetchCity(city: String) {
-        url = "https://api.openweathermap.org/data/2.5/weather?appid=\(apiKey)&units=metric&q=\(city)"
+    func fetchCity(lat: Double, lon: Double) {
+        url = "\(url)&appid=\(apiKey)&lat=\(lat)&lon=\(lon)"
     }
     
     func fetchData() {
@@ -32,12 +31,7 @@ class WeatherManager: ObservableObject {
                             let results = try decoder.decode(WeatherData.self, from: safeData)
                             DispatchQueue.main.async {
                                 self.weatherData = results
-//                                let hi = self.weatherData.weather?[0].id
-//                                
-//                                if let goodHi = hi {
-//                                    print(goodHi)
-//                                }
-                                
+//                                print(self.weatherData.weather[0].id)
                             }
                         } catch {
                             print(error)
@@ -68,6 +62,5 @@ class WeatherManager: ObservableObject {
         default:
             return "questionmark.diamond.fill"
         }
-
     }
 }

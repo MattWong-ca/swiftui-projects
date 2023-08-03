@@ -9,46 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var weatherManager = WeatherManager()
-    let city: String = "st%20louis"
-    @State var iconName: String = ""
+    let city: String = "toronto"
     
     var body: some View {
         let data = weatherManager.weatherData
-        let data2 = data.main?.temp
-        let goodData = String(data2 ?? 0.5)
-
-        
-        
-        VStack {
-            Text("Today's Weather")
-                .font(.title)
-            Text("City: \(city)")
-            HStack {
-                Image(systemName: iconName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 45)
-                Text("\(goodData) °C")
-                    .font(.system(size: 50))
+        let data2 = data?.main.feels_like
+        let goodData = String(format: "%0.1f", data2 ?? 35)
+        ZStack {
+            Image("cloudbackground")
+            VStack {
+                Text("Toronto")
+                    .foregroundColor(.white)
+                    .font(.title)
                     .bold()
+                HStack {
+                    Image(systemName: "sun.max.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 45)
+                        .foregroundColor(.white)
+                    Text("\(goodData) °C")
+                        .font(.system(size: 50))
+                        .bold()
+                        .foregroundColor(.white)
+                }
+            }
+            .onAppear() {
+//                self.weatherManager.fetchCity(city: city)
+                self.weatherManager.fetchCity(lat: 43.7001, lon: -79.4163)
+                self.weatherManager.fetchData()
             }
         }
-        .onAppear() {
-            self.weatherManager.fetchCity(city: city)
-            self.weatherManager.fetchData()
-            
-//            let icon = data.weather?[0].id
-//            let goodIcon = icon ?? 800
-//            iconName = self.weatherManager.getConditionName(weatherId: goodIcon)
-//            print(goodIcon)
-
-        }
-        .onChange(of: weatherManager.weatherData) { newData in
-                    let icon = newData.weather?.first?.id
-                    let goodIcon = icon ?? 800
-                    iconName = self.weatherManager.getConditionName(weatherId: goodIcon)
-                    print(goodIcon)
-                }
     }
 }
 
