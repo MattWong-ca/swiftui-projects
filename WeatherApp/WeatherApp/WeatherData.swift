@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  WeatherData.swift
 //  WeatherApp
 //
 //  Created by Matthew Wong on 2023-07-31.
@@ -8,9 +8,10 @@
 import Foundation
 
 struct WeatherData: Decodable {
-    let name: String
+    var name: String
     let weather: [Weather]
     let main: Main
+    let coord: Coordinates
 }
 
 struct Weather: Decodable {
@@ -20,4 +21,9 @@ struct Weather: Decodable {
 struct Main: Decodable {
 //    let temp: Double
     let feels_like: Double
+}
+
+struct Coordinates: Decodable {
+    let lon: Double
+    let lat: Double
 }

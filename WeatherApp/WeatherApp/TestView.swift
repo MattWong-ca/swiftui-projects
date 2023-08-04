@@ -9,23 +9,22 @@ import SwiftUI
 
 struct TestView: View {
     @StateObject var locationManager = LocationManager()
-    var weatherManager = WeatherManager()
-    @State var weather: WeatherData?
+    @ObservedObject var weatherManager = WeatherManager()
+//    @State var weather: WeatherData?
     
     var body: some View {
         VStack {
             // if location is nil, it's either loading or user hasn't pressed share
             if let location = locationManager.location {
-                Text("Weather data fetched!")
-                /*
-                if let weather = weather {
-                    Text("Weather data fetched!")
+                if let weatherr = weatherManager.weatherData {
+                    WeatherView(weather: weatherr)
                 } else {
                     LoadingView()
                         .task {
-                            weatherManager.fetchLiveWeather(lat: location.latitude, lon: location.longitude)
+                            self.weatherManager.fetchLiveWeather(lat: location.latitude, lon: location.longitude)
+                            self.weatherManager.fetchData()
                         }
-                }*/
+                }
             } else {
                 if locationManager.isLoading {
                     LoadingView()
