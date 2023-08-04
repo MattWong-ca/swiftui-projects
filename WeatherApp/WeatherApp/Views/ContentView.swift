@@ -6,40 +6,34 @@
 //
 
 import SwiftUI
-/*
+
 struct ContentView: View {
+    @StateObject var locationManager = LocationManager()
     @ObservedObject var weatherManager = WeatherManager()
-    let city: String = "toronto"
     
     var body: some View {
-        let data = weatherManager.weatherData
-        let data2 = data?.main.feels_like
-        let goodData = String(format: "%0.1f", data2 ?? 35)
-        ZStack {
-            Image("cloudbackground")
-            VStack {
-                Text("Toronto")
-                    .foregroundColor(.white)
-                    .font(.title)
-                    .bold()
-                HStack {
-                    Image(systemName: "sun.max.fill")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 45)
-                        .foregroundColor(.white)
-                    Text("\(goodData) °C")
-                        .font(.system(size: 50))
-                        .bold()
-                        .foregroundColor(.white)
+        VStack {
+            // if location is nil, it's either loading or user hasn't pressed share
+            if let location = locationManager.location {
+                if let weatherr = weatherManager.weatherData {
+                    WeatherView(weather: weatherr)
+                } else {
+                    LoadingView()
+                        .task {
+                            self.weatherManager.fetchLiveWeather(lat: location.latitude, lon: location.longitude)
+                        }
+                }
+            } else {
+                if locationManager.isLoading {
+                    LoadingView()
+                } else {
+                    WelcomeView()
+                        .environmentObject(locationManager)
                 }
             }
-            .onAppear() {
-//                self.weatherManager.fetchCity(city: city)
-                self.weatherManager.fetchCity(lat: 43.7001, lon: -79.4163)
-                self.weatherManager.fetchData()
-            }
         }
+        .background(Color(red: 0.05, green: 0.14, blue: 0.38))
+        .preferredColorScheme(.dark)
     }
 }
 
@@ -48,4 +42,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-*/
+

@@ -53,9 +53,9 @@ class WeatherManager: ObservableObject {
         case 800:
             return "sunny"
         case 801...804:
-            return "cloudbackground"
+            return "cloud"
         default:
-            return "cloudbackground"
+            return "cloud"
         }
     }
 }
