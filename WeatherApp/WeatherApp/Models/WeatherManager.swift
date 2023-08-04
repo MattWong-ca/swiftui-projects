@@ -13,19 +13,10 @@ class WeatherManager: ObservableObject {
     let apiKey = "5a280e93c19a551e92bb49fb3da7757f"
     var url = "https://api.openweathermap.org/data/2.5/weather?units=metric"
     
-//    func fetchCity(city: String) {
-//        url = "\(url)&appid=\(apiKey)&q=\(city)"
-//    }
-    
     func fetchLiveWeather(lat: CLLocationDegrees, lon: CLLocationDegrees) {
-        print(lat)
-        print(lon)
         if apiKey == "" { print("Forgot API key!!!") }
         url = "\(url)&appid=\(apiKey)&lat=\(lat)&lon=\(lon)"
-    }
-    
-    func fetchData() {
-        print(url)
+        
         if let url = URL(string: url) {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
@@ -36,7 +27,6 @@ class WeatherManager: ObservableObject {
                             let results = try decoder.decode(WeatherData.self, from: safeData)
                             DispatchQueue.main.async {
                                 self.weatherData = results
-                                print(self.weatherData?.name)
                             }
                         } catch {
                             print(error)
@@ -48,24 +38,24 @@ class WeatherManager: ObservableObject {
         }
     }
     
-    func getConditionName(weatherId: Int) -> String {
+    func getIconFromId(weatherId: Int) -> String {
         switch weatherId {
         case 200...232:
-            return "cloud.bolt.fill"
+            return "lightning"
         case 300...321:
-            return "cloud.drizzle.fill"
+            return "rain"
         case 500...531:
-            return "cloud.rain.fill"
+            return "rain"
         case 600...622:
-            return "cloud.snow.fill"
+            return "snow"
         case 701...781:
-            return "cloud.fog.fill"
+            return "fog"
         case 800:
-            return "cloud.sun.fill"
+            return "sunny"
         case 801...804:
-            return "cloud.fill"
+            return "cloudbackground"
         default:
-            return "questionmark.diamond.fill"
+            return "cloudbackground"
         }
     }
 }

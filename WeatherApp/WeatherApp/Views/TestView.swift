@@ -10,7 +10,6 @@ import SwiftUI
 struct TestView: View {
     @StateObject var locationManager = LocationManager()
     @ObservedObject var weatherManager = WeatherManager()
-//    @State var weather: WeatherData?
     
     var body: some View {
         VStack {
@@ -22,7 +21,6 @@ struct TestView: View {
                     LoadingView()
                         .task {
                             self.weatherManager.fetchLiveWeather(lat: location.latitude, lon: location.longitude)
-                            self.weatherManager.fetchData()
                         }
                 }
             } else {
