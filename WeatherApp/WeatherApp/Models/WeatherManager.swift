@@ -10,7 +10,7 @@ import CoreLocation
 
 class WeatherManager: ObservableObject {
     @Published var weatherData: WeatherData?
-    let apiKey = "5a280e93c19a551e92bb49fb3da7757f"
+    let apiKey = ""
     var url = "https://api.openweathermap.org/data/2.5/weather?units=metric"
     
     func fetchLiveWeather(lat: CLLocationDegrees, lon: CLLocationDegrees) {
