@@ -39,7 +39,28 @@ A Pokemon Pokedex that fetches data from a CSV file to display a list of 720+ Po
 - Where I learned to add the images: [Stack Overflow](https://stackoverflow.com/questions/69239521/unable-to-display-pokemon-image-from-pokeapi-co)
 - Tutorial I followed: [Oliver Baumeister](https://www.youtube.com/watch?v=uNst4KS_6DY)
 
-# 2. Hacker News
+# 2. Weather App
+Weather App that uses `CoreLocation` to fetch a user's location and the `OpenWeather API` to fetch the live weather data. Background changes depending on the weather!
+
+### MVP Screenshots
+<img width="200" alt="Toronto weather" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/d50614cf-92f4-429a-a2cb-fb44407b369d">
+<img width="200" alt="Toronto weather with blue background" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/1429e873-4f41-40c0-a21f-cbae87b9da20">
+
+### Landing Page + User Flow
+<img width="200" alt="Landing page" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/7c65275a-23e4-44a6-b7cb-89efaf837b79">
+<img width="200" alt="Requesting user's location" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/4762513f-c79d-4480-9384-1b27fe74b39e">
+<img width="200" alt="LoadingView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/510df346-03bc-4602-b432-9f2d216e056e">
+
+### Different Cities + Weather Background
+<img width="200" alt="SF" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/1a7e9c82-7baa-4bed-b286-eb4ac642108c">
+<img width="200" alt="Mumbai" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/03516551-14d0-409a-85cd-12edeb3e355d">
+<img width="200" alt="Mexico City" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/73808fcf-562f-44fb-9c96-ee4f1c011d2b">
+<img width="200" alt="Rio" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/0a3cab40-1e6d-4222-a0f8-88691ebbb389">
+<img width="200" alt="London" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/e4fb52ef-e325-49b3-95f3-66e63b656392">
+<img width="200" alt="Nishigocho" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/825b774e-0a06-4845-a7d8-ee536f76cb5c">
+
+
+# 3. Hacker News
 Hacker News uses the HN Algolia API (`hn.algolia.com/api`) to fetch a list of front-page articles on Hacker News. The results are returned in a list ordered by the number of points they received.
 
 <img width="200" alt="Hacker News ContentView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/30911b47-278f-418d-9a1b-c2eee549232e">
@@ -57,7 +78,11 @@ Hacker News uses the HN Algolia API (`hn.algolia.com/api`) to fetch a list of fr
 
 `PostData`: a `Results` struct that imitates the JSON data from the API. Conforms to `Decodable` since we want to go from JSON --> struct. `Results` holds a single property `hits`, an array of `Post` objects that defines the properties of an article (eg. points, title, etc.).
 
-# 3. MiiCard
+# 4. Memory Game
+Matching cards memory game.
+
+# 5. MiiCard
 Simple digital business card app that displays 3 contact info buttons. Created a `ButtonLinkView` struct for the contact info buttons to improve code reusability. 
 
 <img width="200" alt="MiiCard ContentView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/8adc9228-c37a-4f38-93f4-d03f44e8161e">
+
