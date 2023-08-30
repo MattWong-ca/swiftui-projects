@@ -42,14 +42,15 @@ A Pokemon Pokedex that fetches data from a CSV file to display a list of 720+ Po
 # 2. Weather App
 Weather App that uses `CoreLocation` to fetch a user's location and the `OpenWeather API` to fetch the live weather data. Background changes depending on the weather!
 
-### MVP Screenshots
-<img width="200" alt="Toronto weather" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/d50614cf-92f4-429a-a2cb-fb44407b369d">
-<img width="200" alt="Toronto weather with blue background" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/1429e873-4f41-40c0-a21f-cbae87b9da20">
+### WIP Screenshots
+<img width="200" alt="MVP" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/70f44feb-f86c-4b9e-9b03-62d890f797f6">
+<img width="200" alt="MVP" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/57cab686-b231-45b1-84c1-5aa39f435644">
 
 ### Landing Page + User Flow
-<img width="200" alt="Landing page" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/7c65275a-23e4-44a6-b7cb-89efaf837b79">
-<img width="200" alt="Requesting user's location" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/4762513f-c79d-4480-9384-1b27fe74b39e">
-<img width="200" alt="LoadingView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/510df346-03bc-4602-b432-9f2d216e056e">
+<img width="200" alt="Landing" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/836eda83-31c3-4110-9ae3-2c8e5f701f09">
+<img width="200" alt="Location" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/a853abf1-52dc-431e-a6a3-bb97a3e1d7e9">
+<img width="200" alt="Loading" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/41bbc299-c7a2-41ad-b437-97155b767936">
+
 
 ### Different Cities + Weather Background
 <img width="200" alt="SF" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/1a7e9c82-7baa-4bed-b286-eb4ac642108c">
