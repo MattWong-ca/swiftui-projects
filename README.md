@@ -64,8 +64,9 @@ Weather App that uses `CoreLocation` to fetch a user's location and the `OpenWea
 # 3. Hacker News
 Hacker News uses the HN Algolia API (`hn.algolia.com/api`) to fetch a list of front-page articles on Hacker News. The results are returned in a list ordered by the number of points they received.
 
-<img width="200" alt="Hacker News ContentView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/30911b47-278f-418d-9a1b-c2eee549232e">
-<img width="200" alt="Hacker News WebView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/c91fe37d-6959-4623-b33e-9a6a9fda68b3">
+<img width="200" alt="ContentView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/add2110e-8a77-4d6a-83a0-666a2207deaa">
+<img width="200" alt="1st WebView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/5f5e8829-914b-49c1-8a58-a89f9acb7bce">
+<img width="200" alt="2nd WebView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/b8f148a6-2593-4587-8530-c0af1a062a24">
 
 ### Views
 `ContentView`: creates an instance of `NetworkManager()` for fetching API data. At `.onAppear`, `fetchData()` is called. The body view uses a `NavigationView` to go back/forth from article links. Each row in the List is a `NavigationLink` with a destination set to a `DetailView`, and text showing the points + article title.
