@@ -4,13 +4,13 @@ This repo contains a collection of SwiftUI projects I've made!
 # 1. Pokédex
 A Pokemon Pokedex that fetches data from a CSV file to display a list of 720+ Pokemons. Each Pokemon has its own profile that shows their types, stats, and an image.
 
-<img width="200" alt="Pokedex ContentView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/f878799d-ee7c-4de6-a056-e0522ddb5ee7">
-<img width="200" alt="Venusaur" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/818f1135-16f3-4bf3-acdf-a8aa72a1f289">
-<img width="200" alt="Charizard" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/9d4caf82-e4ce-48c5-8920-45b53b51ddc7">
-<img width="200" alt="Blastoise" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/ee25d84a-230a-4883-8d04-9705683fdc66">
-<img width="200" alt="Empty search bar" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/92c50dc8-83bb-4f79-b3b1-7afbafcb4e67">
-<img width="200" alt="Using search bar" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/519f95e9-86ff-4a7e-812e-92e6a039edd7">
-<img width="200" alt="Volcanion" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/2d77892d-fb47-4535-be7b-fdc501ff52df">
+<img width="200" alt="Pokedex ContentView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/78c3ef39-82f4-4661-969b-7b10f478ca46">
+<img width="200" alt="Venusaur" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/e01dc6f3-84a8-47b2-b4b4-4e727afa9c98">
+<img width="200" alt="Charizard" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/9c19c9d0-9303-4e6e-9db1-ae37aa272935">
+<img width="200" alt="Blastoise" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/cd0403fd-c8f5-4f1d-8206-97f33107d50f">
+<img width="200" alt="Empty search bar" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/3070561d-8a00-4386-967c-683e4ede15d5">
+<img width="200" alt="Using search bar" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/c0e7adfe-5bdd-4f4e-8a0b-a2a2701b6112">
+<img width="200" alt="Volcanion" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/4c0e0f97-df4a-472c-af96-948f6444fafd">
 
 ### Views
 `ContentView`: a `List` is used inside a `NavigationView`, where each `NavigationLink` links to a `PokemonDetailView` of the titled Pokemon. The colored type tags are reusable `PokemonTypeView`s that are also used in `PokemonDetailView`. The `pokedex` array of Pokemon passed in is from the `loadCSVData()` function in `CSVManager` (called in `PokedexApp`). Added a search bar: used a @State searchText property to pass in `.searchable()`, keeping track of what the user inputs. If a Pokemon's name contains the characters they input, it gets added to a new `filteredPokemon` computed array of Pokemon objects that return the list of Pokemon shown when searched.
@@ -86,5 +86,4 @@ Matching cards memory game.
 # 5. MiiCard
 Simple digital business card app that displays 3 contact info buttons. Created a `ButtonLinkView` struct for the contact info buttons to improve code reusability. 
 
-<img width="200" alt="MiiCard ContentView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/8adc9228-c37a-4f38-93f4-d03f44e8161e">
-
+<img width="200" alt="MiiCard ContentView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/9a03ae6c-7be3-483b-a6a2-6f8baa126fb2">
