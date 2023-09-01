@@ -57,7 +57,7 @@
 			children = (
 				F93F07112AA1649C008B6BB1 /* Components */,
 				F93F07002AA160AF008B6BB1 /* SweaterShopApp.swift */,
-				F93F07022AA160AF008B6BB1 /* ContentView.swift */,
+				F9FBE83B2AA29FAC00C2612C /* Views */,
 				F93F070E2AA161AE008B6BB1 /* Models */,
 				F93F07042AA160B0008B6BB1 /* Assets.xcassets */,
 				F93F07062AA160B0008B6BB1 /* Preview Content */,
@@ -87,6 +87,14 @@
 				F93F07122AA164CA008B6BB1 /* ProductCard.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		F9FBE83B2AA29FAC00C2612C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F93F07022AA160AF008B6BB1 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
