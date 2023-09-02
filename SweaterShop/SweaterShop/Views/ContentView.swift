@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var cartManager = CartManager()
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
     var body: some View {
@@ -16,6 +17,7 @@ struct ContentView: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(productList, id: \.id) { product in
                         ProductCard(product: product)
+                            .environmentObject(cartManager)
                     }
                 }
                 .padding()
@@ -24,8 +26,9 @@ struct ContentView: View {
             .toolbar {
                 NavigationLink {
                     CartView()
+                        .environmentObject(cartManager)
                 } label: {
-                    CartButton(numberOfProducts: 1)
+                    CartButton(numberOfProducts: cartManager.products.count)
                 }
                 
             }
