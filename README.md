@@ -80,10 +80,19 @@ Hacker News uses the HN Algolia API (`hn.algolia.com/api`) to fetch a list of fr
 
 `PostData`: a `Results` struct that imitates the JSON data from the API. Conforms to `Decodable` since we want to go from JSON --> struct. `Results` holds a single property `hits`, an array of `Post` objects that defines the properties of an article (eg. points, title, etc.).
 
-# 4. Memory Game
+# 4. Sweater Shop
+The frontend of a ecommerce sweater store.
+
+<img width="200" alt="ContentView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/858268a3-5282-4496-a560-c32627cb2a91">
+<img width="200" alt="ScrollView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/09274510-95b9-4c03-a1d2-05b8e08bc2c6">
+<img width="200" alt="Empty cart" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/770e7a5c-82e4-4a26-9c51-9cfcf83461d8">
+<img width="200" alt="Filled cart" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/5af896dd-2869-4d64-9060-2c5a067fb813">
+<img width="200" alt="CartView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/08aad756-3c7c-43f3-bd67-c94636b0eb6e">
+
+# 5. Memory Game
 Matching cards memory game.
 
-# 5. MiiCard
+# 6. MiiCard
 Simple digital business card app that displays 3 contact info buttons. Created a `ButtonLinkView` struct for the contact info buttons to improve code reusability. 
 
 <img width="200" alt="MiiCard ContentView" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/9a03ae6c-7be3-483b-a6a2-6f8baa126fb2">
