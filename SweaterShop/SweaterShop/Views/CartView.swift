@@ -23,6 +23,13 @@ struct CartView: View {
                         .bold()
                 }
                 .padding()
+                
+                Button {
+                    // Send them to confirmation page
+                    // Would use PassKit for button if I had Apple Dev Account
+                } label: {
+                    PaymentButton()
+                }
             } else {
                 Text("Your cart is empty")
             }
