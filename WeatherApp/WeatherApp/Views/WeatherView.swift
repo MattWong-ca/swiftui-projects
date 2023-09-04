@@ -24,7 +24,7 @@ struct WeatherView: View {
             Image(icon)
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
-            VStack {
+            ScrollView {
                 Text(city)
                     .foregroundColor(.white)
                     .font(.title)
@@ -45,32 +45,86 @@ struct WeatherView: View {
                 }
                 // TO DO
                 VStack {
-                    Text("testing")
-                        .foregroundColor(.black)
+                    Text("")
                         .background(
                             RoundedRectangle(cornerRadius: 20)
-                                .frame(height: 300)
+                                .frame(height: 190)
                                 .frame(width: 350)
                                 .background(.ultraThinMaterial)
-                            
-                                .overlay(
-                                    HStack {
-                                        Image(systemName: "sun.max")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: 25)
-                                            .foregroundColor(.green)
-                                        Text("text")
-                                            .foregroundColor(.white)
-                                    }
-                                )
-                                .padding(.all)
+//                                .overlay(
+//                                    HStack {
+//                                        Image(systemName: "sun.max")
+//                                            .resizable()
+//                                            .aspectRatio(contentMode: .fit)
+//                                            .frame(width: 25)
+//                                            .foregroundColor(.green)
+//                                        Text("text")
+//                                            .foregroundColor(.white)
+//                                    }
+//                                )
+//                                .padding(.all)
                         )
+                    
+                    VStack {
+                        HStack {
+                            Text("PRECIPITATION")
+                                .foregroundColor(.white)
+                                .font(.caption)
+                            Spacer()
+                        }
+                        .padding(.horizontal, 20)
+                    }
+
+
+                    Rectangle()
+                        .frame(height: 1)
+                        .foregroundColor(.white)
+                        .opacity(0.5)
+                        .padding(.horizontal, 20)
+                    
+                    HStack {
+                        Text("Cloudy")
+                    }
+                    Spacer()
                 }
-                .frame(height: 300)
+//                .frame(height: 165)
                 .frame(width: 350)
                 .cornerRadius(20)
                 .padding(.top, 20)
+                
+//                VStack {
+//                    Text("")
+//                        .foregroundColor(.black)
+//                        .background(
+//                            RoundedRectangle(cornerRadius: 20)
+//                                .frame(height: 200)
+//                                .frame(width: 350)
+//                                .background(.ultraThinMaterial)
+//
+//                        )
+//
+//                    VStack {
+//                        HStack {
+//                            Text("PRECIPITATION")
+//                                .foregroundColor(.white)
+//                                .font(.caption)
+//                            Spacer()
+//                        }
+//                        .padding(.horizontal, 20)
+//                    }
+//
+//
+//                    Rectangle()
+//                        .frame(height: 1)
+//                        .foregroundColor(.white)
+//                        .opacity(0.5)
+//                        .padding(.horizontal, 20)
+//                }
+//                .frame(height: 200)
+//                .frame(width: 350)
+//                .cornerRadius(20)
+//                .padding(.top, 10)
+                
 //                VStack {
 //                    Text("testing")
 //                        .foregroundColor(.black)
