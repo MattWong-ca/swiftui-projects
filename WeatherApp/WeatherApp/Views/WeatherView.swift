@@ -29,22 +29,26 @@ struct WeatherView: View {
                     .foregroundColor(.white)
                     .font(.title)
                     .bold()
+                    .shadow(radius: 5)
                 Text("\(temp)°")
                     .font(.system(size: 100))
                     .bold()
                     .foregroundColor(.white)
+                    .shadow(radius: 5)
                 HStack {
                     Text("H: \(tempMax)°")
                         .font(.system(size: 20))
+                        .shadow(radius: 10)
                     Text("L: \(tempMin)°")
                         .font(.system(size: 20))
+                        .shadow(radius: 5)
                 }
-                /* TO DO
+                // TO DO
                 VStack {
                     RoundedRectangle(cornerRadius: 20)
-                        .frame(height: 60)
+                        .frame(height: 300)
                         .foregroundColor(Color.white)
-                        .opacity(0.5)
+                        .opacity(0.2)
                         .overlay(HStack {
                             Image(systemName: "sun.max")
                                 .resizable()
@@ -52,11 +56,10 @@ struct WeatherView: View {
                                 .frame(width: 25)
                                 .foregroundColor(.green)
                             Text("text")
-                                .foregroundColor(Color.gray)
-                                
+                                .foregroundColor(.white)
                         })
                         .padding(.all)
-                }*/
+                }
                 Spacer()
             }
             .offset(y: 160)
