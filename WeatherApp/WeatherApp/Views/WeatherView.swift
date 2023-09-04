@@ -49,25 +49,28 @@ struct WeatherView: View {
                         .foregroundColor(.black)
                         .background(
                             RoundedRectangle(cornerRadius: 20)
-                                .background(.ultraThinMaterial)
                                 .frame(height: 300)
-                                .frame(width: 500)
-//                                .overlay(
-//                                    HStack {
-//                                        Image(systemName: "sun.max")
-//                                            .resizable()
-//                                            .aspectRatio(contentMode: .fit)
-//                                            .frame(width: 25)
-//                                            .foregroundColor(.green)
-//                                        Text("text")
-//                                            .foregroundColor(.white)
-//                                    }
-//                                )
-//                                .padding(.all)
+                                .frame(width: 350)
+                                .background(.ultraThinMaterial)
+                            
+                                .overlay(
+                                    HStack {
+                                        Image(systemName: "sun.max")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 25)
+                                            .foregroundColor(.green)
+                                        Text("text")
+                                            .foregroundColor(.white)
+                                    }
+                                )
+                                .padding(.all)
                         )
                 }
                 .frame(height: 300)
+                .frame(width: 350)
                 .cornerRadius(20)
+                .padding(.top, 20)
 //                VStack {
 //                    Text("testing")
 //                        .foregroundColor(.black)
