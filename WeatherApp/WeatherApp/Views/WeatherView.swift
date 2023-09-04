@@ -48,7 +48,7 @@ struct WeatherView: View {
                     Text("")
                         .background(
                             RoundedRectangle(cornerRadius: 20)
-                                .frame(height: 190)
+                                .frame(height: 270)
                                 .frame(width: 350)
                                 .background(.ultraThinMaterial)
 //                                .overlay(
@@ -83,11 +83,41 @@ struct WeatherView: View {
                         .padding(.horizontal, 20)
                     
                     HStack {
-                        Text("Cloudy")
+                        Text(weather.weather[0].description.capitalized)
+                            
+                        Spacer()
+                        Image(systemName: "cloud.fill")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 25)
+                        
+                        
                     }
+                    .padding(.horizontal, 20)
+                    
+                    HStack {
+                        Text("Humidity:")
+                            
+                        Spacer()
+                        Text("\(weather.main.humidity)%")
+                        
+                        
+                    }
+                    .padding(.horizontal, 20)
+                    
+                    HStack {
+                        Text("Cloudiness:")
+                            
+                        Spacer()
+                        Text("\(weather.clouds.all)%")
+                        
+                        
+                    }
+                    .padding(.horizontal, 20)
+                    
                     Spacer()
                 }
-//                .frame(height: 165)
+//                .frame(height: 200)
                 .frame(width: 350)
                 .cornerRadius(20)
                 .padding(.top, 20)
