@@ -45,21 +45,51 @@ struct WeatherView: View {
                 }
                 // TO DO
                 VStack {
-                    RoundedRectangle(cornerRadius: 20)
-                        .frame(height: 300)
-                        .foregroundColor(Color.white)
-                        .opacity(0.2)
-                        .overlay(HStack {
-                            Image(systemName: "sun.max")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 25)
-                                .foregroundColor(.green)
-                            Text("text")
-                                .foregroundColor(.white)
-                        })
-                        .padding(.all)
+                    Text("testing")
+                        .foregroundColor(.black)
+                        .background(
+                            RoundedRectangle(cornerRadius: 20)
+                                .background(.ultraThinMaterial)
+                                .frame(height: 300)
+                                .frame(width: 500)
+//                                .overlay(
+//                                    HStack {
+//                                        Image(systemName: "sun.max")
+//                                            .resizable()
+//                                            .aspectRatio(contentMode: .fit)
+//                                            .frame(width: 25)
+//                                            .foregroundColor(.green)
+//                                        Text("text")
+//                                            .foregroundColor(.white)
+//                                    }
+//                                )
+//                                .padding(.all)
+                        )
                 }
+                .frame(height: 300)
+                .cornerRadius(20)
+//                VStack {
+//                    Text("testing")
+//                        .foregroundColor(.black)
+//                    RoundedRectangle(cornerRadius: 20)
+//                        .frame(height: 300)
+//                        .background(.thinMaterial)
+//                        .cornerRadius(20)
+//                        .foregroundColor(Color.white)
+//                        .opacity(0.5)
+//                        .overlay(HStack {
+//                            Image(systemName: "sun.max")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .frame(width: 25)
+//                                .foregroundColor(.green)
+//                            Text("text")
+//                                .foregroundColor(.white)
+//                        })
+//                        .padding(.all)
+//                }
+//                .background(.ultraThinMaterial)
+//                .frame(height: 300)
                 Spacer()
             }
             .offset(y: 160)
