@@ -53,13 +53,12 @@ Weather App that uses `CoreLocation` to fetch a user's location and the `OpenWea
 
 
 ### Different Cities + Weather Background
-<img width="200" alt="SF" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/1a7e9c82-7baa-4bed-b286-eb4ac642108c">
-<img width="200" alt="Mumbai" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/03516551-14d0-409a-85cd-12edeb3e355d">
-<img width="200" alt="Mexico City" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/73808fcf-562f-44fb-9c96-ee4f1c011d2b">
-<img width="200" alt="Rio" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/0a3cab40-1e6d-4222-a0f8-88691ebbb389">
-<img width="200" alt="London" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/e4fb52ef-e325-49b3-95f3-66e63b656392">
-<img width="200" alt="Nishigocho" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/825b774e-0a06-4845-a7d8-ee536f76cb5c">
-
+<img width="200" alt="Johannesburg" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/7318d528-e9a0-4dff-877e-aaff41f69ab0">
+<img width="200" alt="Mumbai" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/264afd81-4504-4a2f-80ce-7cf07e398d91">
+<img width="200" alt="Rio 2023-09-04 at 4 37 52 PM" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/1c058b9e-07f2-4632-ade6-c3373107780f">
+<img width="200" alt="Nishigocho 2023-08-04 at 3 50 07 PM" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/324399da-c08f-48d2-a43d-ba52fd2fb26f">
+<img width="200" alt="London 2023-08-04 at 3 48 00 PM" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/ef95e6dd-d6fb-4e52-9e5f-ea6360115b34">
+<img width="200" alt="Mexico City 2023-08-04 at 3 34 51 PM" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/4eb0d6bc-6161-4e1d-997c-507e0fd35553">
 
 # 3. Hacker News
 Hacker News uses the HN Algolia API (`hn.algolia.com/api`) to fetch a list of front-page articles on Hacker News. The results are returned in a list ordered by the number of points they received.
