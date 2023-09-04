@@ -14,8 +14,14 @@ class WeatherManager: ObservableObject {
     var url = "https://api.openweathermap.org/data/2.5/weather?units=metric"
     
     func fetchLiveWeather(lat: CLLocationDegrees, lon: CLLocationDegrees) {
-        if apiKey == "" { print("Forgot API key!!!") }
+        if apiKey == "" {
+            print("Forgot API key!!!")
+        }
+        
         url = "\(url)&appid=\(apiKey)&lat=\(lat)&lon=\(lon)"
+    
+        // Copy + paste what it prints out for testing purposes!
+        print(url)
         
         if let url = URL(string: url) {
             let session = URLSession(configuration: .default)
