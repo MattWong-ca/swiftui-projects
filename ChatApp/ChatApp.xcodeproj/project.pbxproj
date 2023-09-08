@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F92B4DFE2AAABCB900AF2638 /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B4DFD2AAABCB900AF2638 /* TitleRow.swift */; };
 		F93B1B152AA966110011CE71 /* ChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B1B142AA966110011CE71 /* ChatAppApp.swift */; };
 		F93B1B172AA966110011CE71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B1B162AA966110011CE71 /* ContentView.swift */; };
 		F93B1B192AA966120011CE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F93B1B182AA966120011CE71 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F92B4DFD2AAABCB900AF2638 /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
 		F93B1B112AA966110011CE71 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F93B1B142AA966110011CE71 /* ChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppApp.swift; sourceTree = "<group>"; };
 		F93B1B162AA966110011CE71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F92B4DFC2AAABBAA00AF2638 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F92B4DFD2AAABCB900AF2638 /* TitleRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		F93B1B082AA966110011CE71 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +61,7 @@
 		F93B1B132AA966110011CE71 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				F92B4DFC2AAABBAA00AF2638 /* Components */,
 				F93B1B142AA966110011CE71 /* ChatAppApp.swift */,
 				F93B1B162AA966110011CE71 /* ContentView.swift */,
 				F93B1B182AA966120011CE71 /* Assets.xcassets */,
@@ -139,6 +150,7 @@
 			files = (
 				F93B1B172AA966110011CE71 /* ContentView.swift in Sources */,
 				F93B1B152AA966110011CE71 /* ChatAppApp.swift in Sources */,
+				F92B4DFE2AAABCB900AF2638 /* TitleRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
