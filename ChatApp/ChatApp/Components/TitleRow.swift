@@ -21,12 +21,29 @@ struct TitleRow: View {
             } placeholder: {
                 ProgressView()
             }
+            
+            VStack(alignment: .leading) {
+                Text(name)
+                    .font(.title).bold()
+                Text("Online")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            
+            Image(systemName: "phone.fill")
+                .foregroundColor(.gray)
+                .padding(10)
+                .background(.white)
+                .cornerRadius(50)
         }
+        .padding()
     }
 }
 
 struct TitleRow_Previews: PreviewProvider {
     static var previews: some View {
         TitleRow()
+            .background(Color("Peach"))
     }
 }
