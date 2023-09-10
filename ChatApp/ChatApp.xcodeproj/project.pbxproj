@@ -12,6 +12,7 @@
 		F93B1B172AA966110011CE71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B1B162AA966110011CE71 /* ContentView.swift */; };
 		F93B1B192AA966120011CE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F93B1B182AA966120011CE71 /* Assets.xcassets */; };
 		F93B1B1C2AA966120011CE71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F93B1B1B2AA966120011CE71 /* Preview Assets.xcassets */; };
+		F9D102552AAD69D300B7DB8E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D102542AAD69D300B7DB8E /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		F93B1B162AA966110011CE71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F93B1B182AA966120011CE71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F93B1B1B2AA966120011CE71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9D102542AAD69D300B7DB8E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		F93B1B132AA966110011CE71 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				F9D102532AAD69C700B7DB8E /* Models */,
 				F92B4DFC2AAABBAA00AF2638 /* Components */,
 				F93B1B142AA966110011CE71 /* ChatAppApp.swift */,
 				F93B1B162AA966110011CE71 /* ContentView.swift */,
@@ -76,6 +79,14 @@
 				F93B1B1B2AA966120011CE71 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F9D102532AAD69C700B7DB8E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9D102542AAD69D300B7DB8E /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F93B1B172AA966110011CE71 /* ContentView.swift in Sources */,
+				F9D102552AAD69D300B7DB8E /* Message.swift in Sources */,
 				F93B1B152AA966110011CE71 /* ChatAppApp.swift in Sources */,
 				F92B4DFE2AAABCB900AF2638 /* TitleRow.swift in Sources */,
 			);
