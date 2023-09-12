@@ -25,7 +25,10 @@ struct MessageBubble: View {
             }
             
             if showTime {
-                
+                Text("\(message.timestamp.formatted(.dateTime.hour().minute()))")
+                    .font(.caption2)
+                    .foregroundColor(.gray)
+                    .padding(message.received ? .leading : .trailing, 25)
             }
         }
         .frame(maxWidth: .infinity, alignment: message.received ? .leading : .trailing)
@@ -36,6 +39,6 @@ struct MessageBubble: View {
 
 struct MessageBubble_Previews: PreviewProvider {
     static var previews: some View {
-        MessageBubble(message: Message(id: "1", text: "Hi it's me, this is a test message", received: false, timestamp: Date()))
+        MessageBubble(message: Message(id: "1", text: "Hi it's me, this is a test message", received: true, timestamp: Date()))
     }
 }
