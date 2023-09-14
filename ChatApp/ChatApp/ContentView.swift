@@ -21,6 +21,8 @@ struct ContentView: View {
                     MessageBubble(message: Message(id: "123", text: text, received: true, timestamp: Date()))
                 }
             }
+            .padding(.top, 10)
+            .background(.white)
         }
     }
 }
