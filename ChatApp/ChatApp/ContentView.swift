@@ -14,7 +14,6 @@ struct ContentView: View {
     var body: some View {
         VStack {
             TitleRow()
-                .background(Color("Peach"))
             
             ScrollView {
                 ForEach(messageArray, id: \.self) { text in
@@ -23,7 +22,9 @@ struct ContentView: View {
             }
             .padding(.top, 10)
             .background(.white)
+            .cornerRadius(30, corners: [.topLeft, .topRight])
         }
+        .background(Color("Peach"))
     }
 }
 

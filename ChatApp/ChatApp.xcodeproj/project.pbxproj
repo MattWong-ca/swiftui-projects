@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F901A7572AB3FF2C00D74F55 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F901A7562AB3FF2C00D74F55 /* MessageField.swift */; };
 		F92B4DFE2AAABCB900AF2638 /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B4DFD2AAABCB900AF2638 /* TitleRow.swift */; };
 		F93B1B152AA966110011CE71 /* ChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B1B142AA966110011CE71 /* ChatAppApp.swift */; };
 		F93B1B172AA966110011CE71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93B1B162AA966110011CE71 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F901A7562AB3FF2C00D74F55 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
 		F92B4DFD2AAABCB900AF2638 /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
 		F93B1B112AA966110011CE71 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F93B1B142AA966110011CE71 /* ChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppApp.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			children = (
 				F92B4DFD2AAABCB900AF2638 /* TitleRow.swift */,
 				F9D102562AAD6A6100B7DB8E /* MessageBubble.swift */,
+				F901A7562AB3FF2C00D74F55 /* MessageField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				F93B1B172AA966110011CE71 /* ContentView.swift in Sources */,
 				F9BDDBAB2AB2A92300D36BAF /* Extensions.swift in Sources */,
 				F9D102552AAD69D300B7DB8E /* Message.swift in Sources */,
+				F901A7572AB3FF2C00D74F55 /* MessageField.swift in Sources */,
 				F9D102572AAD6A6100B7DB8E /* MessageBubble.swift in Sources */,
 				F93B1B152AA966110011CE71 /* ChatAppApp.swift in Sources */,
 				F92B4DFE2AAABCB900AF2638 /* TitleRow.swift in Sources */,
