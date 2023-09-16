@@ -19,6 +19,15 @@ struct MessageField_Previews: PreviewProvider {
     }
 }
 
-//struct CustomTextField: View {
-//
-//}
+struct CustomTextField: View {
+    var placeholder: Text
+    @Binding var text: String
+    var editingChanged: (Bool) -> () = {_ in}
+    var commit: () -> () = {}
+    
+    var body: some View {
+        ZStack {
+            
+        }
+    }
+}
