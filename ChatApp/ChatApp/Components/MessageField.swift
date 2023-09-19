@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MessageField: View {
+    @State private var message = ""
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -26,8 +27,13 @@ struct CustomTextField: View {
     var commit: () -> () = {}
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .leading) {
+            if text.isEmpty {
+                placeholder
+                    .opacity(0.5)
+            }
             
+            TextField("", text: $text, onEditingChanged: editingChanged, onCommit: commit)
         }
     }
 }
