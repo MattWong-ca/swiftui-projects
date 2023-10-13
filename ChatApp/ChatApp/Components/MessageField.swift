@@ -10,7 +10,19 @@ import SwiftUI
 struct MessageField: View {
     @State private var message = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            CustomTextField(placeholder: Text("Enter your message here"), text: $message)
+            
+            Button {
+                print("message sent!")
+            } label: {
+                Image(systemName: "paperplane.fill")
+                    .foregroundColor(.white)
+                    .padding(10)
+                    .background(Color("Peach"))
+                    .cornerRadius(50)
+            }
+        }
     }
 }
 
