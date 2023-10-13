@@ -15,6 +15,7 @@ struct MessageField: View {
             
             Button {
                 print("message sent!")
+                message = ""
             } label: {
                 Image(systemName: "paperplane.fill")
                     .foregroundColor(.white)
@@ -23,6 +24,11 @@ struct MessageField: View {
                     .cornerRadius(50)
             }
         }
+        .padding(.horizontal)
+        .padding(.vertical, 10)
+        .background(Color("Gray"))
+        .cornerRadius(50)
+        .padding()
     }
 }
 
