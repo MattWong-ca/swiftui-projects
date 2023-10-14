@@ -91,6 +91,13 @@ The frontend of a ecommerce sweater store.
 # 5. Memory Game
 Matching cards memory game.
 
+<img width="200" alt="Screenshot" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/604a540d-0966-4c83-8cb1-c7e88306bf8a">
+<img width="200" alt="Screenshot" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/48a67555-3b9e-46bb-a5ea-e19f1ba297ea">
+<img width="200" alt="Screenshot" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/5997a63e-e050-40f0-b46a-53d93fce48f2">
+<img width="200" alt="Screenshot" src="https://github.com/MattWong-ca/swiftui-projects/assets/66754344/1b8f3055-6448-44d8-a257-f9e88ca65701">
+
+
+
 # 6. MiiCard
 Simple digital business card app that displays 3 contact info buttons. Created a `ButtonLinkView` struct for the contact info buttons to improve code reusability. 
 
